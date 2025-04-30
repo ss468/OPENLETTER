@@ -1,0 +1,36 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* App content wrapper (to stay above background) */
+  .app-wrapper {
+    position: relative;
+    z-index: 3;
+    color: white; /* Ensures default text is visible */
+  }
+  
+  /* Background layers */
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("/stars.png") repeat top center; /* Stars image */
+    z-index: 0;
+    pointer-events: none; /* Prevents interaction with the background */
+  }
+  
+  /* Optional: add smooth scrolling effect if you want */
+  @keyframes move-stars {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -10000px 10000px;
+    }
+  }
+  

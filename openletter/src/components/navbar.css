@@ -1,0 +1,31 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+   
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    backdrop-filter: blur(5px);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .nav-link {
+    color:#FFFFF0;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    background: rgba(0, 0, 0, 0.5),
+
+  }
+  
+  .nav-link:hover {
+    color:#00FFFF; /* Neon blue */
+    transform: scale(1.1);
+    
+
+  }
+  
